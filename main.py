@@ -53,7 +53,7 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
 if __name__ == "__main__":
     import asyncio
     import os
-    TOKEN = os.getenv("BOT_TOKEN")  # GitHub Secrets থেকে নেবে
+    TOKEN = "8160778255:AAFkAv4cWQ3UHUFsGVindhijYi3XPmoE40M"  # GitHub Secrets থেকে নেবে
 
     app = ApplicationBuilder().token(TOKEN).build()
     app.add_handler(CommandHandler("start", start))
